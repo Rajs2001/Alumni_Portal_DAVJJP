@@ -38,87 +38,124 @@ const generateBirthdayEmailTemplate = (user) => {
     const firstName = user.fullName.split(' ')[0];
     
     return `
-    <div style="font-family: 'Montserrat', sans-serif; background: #f0f2f5; padding: 40px 20px; margin: 0;">
-    <div style="max-width: 600px; margin: auto; background-color: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 25px rgba(0,0,0,0.07);">
+    <div style="font-family: Arial, Helvetica, sans-serif; background-color: #f5f7fa; padding: 15px 8px; margin: 0;">
+        
+        <!-- Mobile-First Container -->
+        <table cellpadding="0" cellspacing="0" border="0" width="100%" style="max-width: 600px; margin: 0 auto; background-color: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 20px rgba(0,0,0,0.08);">
+            
+            <!-- Top accent -->
+            <tr>
+                <td style="height: 3px; background: linear-gradient(90deg, #667eea 0%, #764ba2 50%, #f093fb 100%); font-size: 0; line-height: 0;">&nbsp;</td>
+            </tr>
 
-        <div style="background: linear-gradient(145deg, #8448ac 0%, #FF9F43 100%); padding: 40px 25px; text-align: center; position: relative;">
-            <div style="font-size: 65px; margin-bottom: 10px; line-height: 1;">
-                <span style="display: inline-block; transform: rotate(-5deg);">🥳</span>
-            </div>
-            <h1 style="color: white; margin: 0; font-size: 30px; font-weight: 700; text-shadow: 0 2px 5px rgba(0,0,0,0.2);">
-                Happy Birthday, Dearest ${firstName}!
-            </h1>
-            <p style="color: rgba(255,255,255,0.9); margin: 10px 0 0 0; font-size: 18px; font-weight: 300;">
-                आपको जन्मदिन की हार्दिक शुभकामनाएं! 🎂
-            </p>
-        </div>
+            <tr>
+                <td style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 20px 15px; text-align: center;">
+                    
+                    <div style="font-size: 36px; margin-bottom: 8px; line-height: 1;">🎉</div>
+                    
+                    <h1 style="color: #ffffff; margin: 0 0 5px 0; font-size: 22px; font-weight: bold; text-shadow: 0 2px 4px rgba(0,0,0,0.2); font-family: Arial, Helvetica, sans-serif; line-height: 1.1;">
+                       Happy Birthday, Dear ${firstName} 
+                    </h1>
+                    
+                    <p style="color: #ffffff; margin: 3px 0 0 0; font-size: 13px; font-family: Arial, Helvetica, sans-serif; opacity: 0.95;">
+                        Your DAV family of 170+ alumni is celebrating YOU! 🥳
+                    </p>
+                </td>
+            </tr>
 
-        <div style="padding: 30px 30px; text-align: center;">
+            <tr>
+                <td style="padding: 25px 20px;">
+                    
 
-            <div style="margin-bottom: 25px;">
-                <div style="font-size: 70px; margin-bottom: 10px; line-height: 1;">
-                    <span style="display: inline-block; transform: scale(1.05);">✨</span>
-                </div>
-                <h2 style="color: #4a4a4a; margin: 0 0 8px 0; font-size: 26px; font-weight: 600;">
-                    Celebrating ${age} Years of Wonderful You!
-                </h2>
-                <p style="color: #7f8c8d; margin: 0; font-size: 16px;">
-                    Another incredible year filled with joy and amazing memories.
-                </p>
-            </div>
+                    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                        <tr>
+                            <td style="text-align: center; padding-bottom: 20px;">
+                                <div style="font-size: 40px; margin-bottom: 8px; line-height: 1;">🌟</div>
+                                <h2 style="color: #2c3e50; margin: 0 0 5px 0; font-size: 20px; font-weight: bold; font-family: Arial, Helvetica, sans-serif;">
+                                    ${age} Years of Impact!
+                                </h2>
+                                <p style="color: #7f8c8d; margin: 0; font-size: 14px; font-family: Arial, Helvetica, sans-serif;">
+                                    Every year, you inspire someone. Today, we're inspired by YOU.
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
 
-            <div style="background: #fff8f2; border-radius: 10px; padding: 25px; margin-bottom: 25px; border-left: 5px solid #FF9F43;">
-                <h3 style="color: #2c3e50; margin: 0 0 15px 0; font-size: 20px; font-weight: 600;">
-                    From Your Warm DAV Family
-                </h3>
-                <p style="color: #555; line-height: 1.6; margin: 0; font-size: 15px;">
-                    We're thinking of all the happy times from our school days at <strong>MN Jha DAV Public School</strong>. Those shared moments are truly precious!
-                    <br><br>
-                    May this new year bring you immense happiness, success, and everything wonderful you deserve. We're cheering for you!
-                </p>
-            </div>
+                    <table cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color: #fff8f0; border-radius: 10px; margin-bottom: 20px;">
+                        <tr>
+                            <td style="padding: 18px 15px; border-left: 3px solid #f39c12;">
+                                <h3 style="color: #d35400; margin: 0 0 10px 0; font-size: 16px; font-weight: bold; font-family: Arial, Helvetica, sans-serif;">
+                                    💝 Your DAV Family Remembers
+                                </h3>
+                                
+                                <p style="color: #34495e; line-height: 1.5; margin: 0 0 10px 0; font-size: 14px; font-family: Arial, Helvetica, sans-serif;">
+                                  The bonds we formed at <strong>MN Jha DAV Public School</strong> remain strong, and you're always in our hearts. Those precious memories and friendships continue to bring us joy!
+                                </p>
+                                
+                                <p style="color: #d35400; line-height: 1.4; margin: 0; font-size: 13px; font-weight: bold; font-family: Arial, Helvetica, sans-serif; background-color: #fef5e7; padding: 6px 8px; border-radius: 4px;">
+                                    <em>Wishing you boundless happiness and success in the year ahead!🌟</em>
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
 
-            <div style="background: linear-gradient(135deg, #e0f7f4 0%, #d1f2eb 100%); border-radius: 10px; padding: 20px; margin-bottom: 30px;">
-                <p style="color: #2c3e50; margin: 0; font-size: 16px; line-height: 1.6;">
-                    "May your birthday be filled with sunshine, smiles, and all the happiness your heart can hold. Here's to making more beautiful memories!" ❤️
-                </p>
-            </div>
+                    <table cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color: #e8f5f3; border-radius: 10px; margin-bottom: 20px;">
+                        <tr>
+                            <td style="padding: 15px; border-left: 3px solid #1abc9c; text-align: center;">
+                                <p style="color: #2c3e50; margin: 0; font-size: 14px; line-height: 1.4; ; font-family: Arial, Helvetica, sans-serif;">
+                                    <em>Your achievements make us proud, your happiness brings us joy. Today and always, we celebrate YOU! ❤️
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
 
-            <div style="margin: 30px 0;">
-                <a href="https://alumni-portal-davjjp.vercel.app/login"
-                   style="background: linear-gradient(135deg, #8448ac 0%, #8448ac 100%);
-                          color: white;
-                          padding: 14px 35px;
-                          text-decoration: none;
-                          border-radius: 50px;
-                          display: inline-block;
-                          font-weight: 600;
-                          font-size: 16px;
-                          box-shadow: 0 5px 15px rgba(255, 107, 107, 0.3);
-                          transition: all 0.3s ease-in-out;">
-                    Connect with Your DAV Family! 🎉
-                </a>
-            </div>
+                    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                        <tr>
+                            <td style="text-align: center; padding: 12px 0;">
+                                <table cellpadding="0" cellspacing="0" border="0" style="margin: 0 auto;">
+                                    <tr>
+                                        <td style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 25px; text-align: center;">
+                                            <a href="https://alumni-portal-davjjp.vercel.app/login" 
+                                               style="display: inline-block; padding: 14px 28px; color: #ffffff; text-decoration: none; font-weight: bold; font-size: 15px; font-family: Arial, Helvetica, sans-serif; border-radius: 25px;">
+                                                Share Your Joy (2 min) 🚀
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <p style="color: #7f8c8d; margin: 6px 0 0 0; font-size: 11px; font-family: Arial, Helvetica, sans-serif;">
+                                    ⚡ <strong>30+ people</strong> clicked today!
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
 
-        </div>
+                </td>
+            </tr>
+            <tr>
+                <td style="background-color: #f8faff; padding: 18px 20px; text-align: center; border-top: 1px solid #e9ecef;">
+                    
+                    <p style="color: #6c757d; margin: 0 0 6px 0; font-size: 12px; font-family: Arial, Helvetica, sans-serif;">
+                        <strong>2,847+ DAVians</strong> • <strong>5+ countries</strong> • <strong>One bond</strong> 🌍
+                    </p>
+                    
+                    <p style="color: #667eea; margin: 0 0 10px 0; font-size: 14px; font-weight: bold; font-family: Arial, Helvetica, sans-serif;">
+                        "Once a DAVian, Always a Legend!" 👑
+                    </p>
+                    
+                    <p style="color: #adb5bd; margin: 0; font-size: 11px; font-family: Arial, Helvetica, sans-serif;">
+                        <a href="https://alumni-portal-davjjp.vercel.app/" style="color: #667eea; text-decoration: none;">Share Love</a> •
+                        <a href="mailtt:mnjhadavalumni@gmail.com" style="color: #667eea; text-decoration: none;">Tell Story</a>
+                    </p>
+                    
+                </td>
+            </tr>
 
-        <div style="background: #f8faff; padding: 25px 30px; text-align: center; border-top: 1px solid #e9eff5;">
-            <p style="color: #7f8c8d; margin: 0 0 10px 0; font-size: 14px;">
-                Warmest wishes from the <strong>MN Jha DAV Public School Alumni Portal</strong>
-            </p>
-            <p style="color: #7f8c8d; margin: 0 0 15px 0; font-size: 13px; font-style: italic;">
-                "Once a DAVian, Always a DAVian!" <span style="color: #FF6B6B;">💙</span>
-            </p>
-            <div style="border-top: 1px solid #e0e6ed; padding-top: 15px; margin-top: 15px;">
-                <p style="color: #aeb6c1; margin: 0; font-size: 12px;">
-                    Part of your DAV Alumni family.<br>
-                    <a href="https://alumni-portal-davjjp.vercel.app/" style="color: #FF6B6B; text-decoration: none; font-weight: 500;">Visit Alumni Portal</a> •
-                    <a href="mailto:support@dav-alumni.com" style="color: #FF6B6B; text-decoration: none; font-weight: 500;">Contact Us</a>
-                </p>
-            </div>
-        </div>
+            <tr>
+                <td style="height: 3px; background: linear-gradient(90deg, #667eea 0%, #764ba2 50%, #f093fb 100%); font-size: 0; line-height: 0;">&nbsp;</td>
+            </tr>
+
+        </table>
     </div>
-</div>
     `;
 };
 
